@@ -1,5 +1,5 @@
 <!--
-    Ability to specify the start date with Day, Month and Year as Select Input Item
+    Ability to add Notes as well as cancel, reset and submit button so as to do some action on form entry
 -->
 
 <!DOCTYPE html>
@@ -35,19 +35,19 @@
                     <div class="profile-radio-content">
                         <label>
                             <input type="radio" id="profile1" name="profile" value="../assets/profile-images/Ellipse -3.png" required>
-                            <img class="profile" id="image1" src="../Assets/profile-images/Ellipse -3.png">
+                            <img class="profile" id="image1" src="../assets/profile-images/Ellipse -3.png">
                         </label>
                         <label>
                             <input type="radio" id="profile2" name="profile" value="../assets/profile-images/Ellipse 1.png" required>
-                            <img class="profile" id="image2" src="../Assets/profile-images/Ellipse -1.png">
+                            <img class="profile" id="image2" src="../assets/profile-images/Ellipse 1.png">
                         </label>
                         <label>
                             <input type="radio" id="profile3" name="profile" value="../assets/profile-images/Ellipse -8.png" required>
-                            <img class="profile" id="image3" src="../Assets/profile-images/Ellipse -8.png">
+                            <img class="profile" id="image3" src="../assets/profile-images/Ellipse -8.png">
                         </label>
                         <label>
                             <input type="radio" id="profile4" name="profile" value="../assets/profile-images/Ellipse -7.png" required>
-                            <img class="profile" id="image4" src="../Assets/profile-images/Ellipse -7.png">
+                            <img class="profile" id="image4" src="../assets/profile-images/Ellipse -7.png">
                         </label>
                     </div>
                 </div>
@@ -141,9 +141,20 @@
                             <option value='2016'>2016</option>
                         </select>
                     </div>
-                </div>
+                </div>  
+                <div class="row-content">
+                    <label class="label text" for="notes">Notes</label>
+                    <textarea id="notes" class="input" name="Notes" style="height:100px;"></textarea>
+                </div>   
+                <div class="buttonParent">
+                    <a href="./index.html" class="resetButton button cancelButton">Cancel</a>
+                    <div class="submit-reset">
+                        <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                        <button type="reset" class="resetButton button">Reset</button>
+                    </div>
+                </div> 
             </form>    
         </div>  
-        <script src="../JS/validate.js"></script>
+        <script src="../js/validate.js"></script>
     </body>
 </html>
