@@ -1,5 +1,6 @@
 <!--
-    Ability to view Employee Payroll details in a Tabular Format.
+    Ability to view Employee Payroll details in a Tabular Format from JS File using Template Literals. 
+    - Use Template literal ES6 feature
 -->
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
             rel="stylesheet">
         <title>Employee Payroll App</title>
-        <script defer src="../js/home.js"></script>
+        <script defer src="../JS/home.js"></script>
     </head>
     <body>
         <!--UC 14-->
@@ -33,39 +34,15 @@
                     Employee Details
                     <div class="emp-count">10</div>
                 </div>
-                <a href="../PAGES/index.html
-                " class="add-button">
+                <a href="../PAGES/index.html" class="add-button">
                 <img src="../assets/icons/add-24px.svg" alt="">Add User</a>
             </div>
             <!--UC 16-->
             <div class="table-main">
                 <table id ="display" class="table">
-                    <tr>
-                        <th>Name</th>
-                        <th>Gender</th>
-                        <th>Department</th>
-                        <th>Salary</th>
-                        <th>Start Date</th>
-                        <th>Actions</th>
-                    </tr>
-                    <tr>
-                        <td>Sayani Koley</td>
-                        <td>Female</td>
-                        <td>
-                            <div class="dept-label">HR</div>
-                            <div class="dept-label">Engineer</div>
-                        </td>
-                        <td>300000</td>
-                        <td>1 Nov 2020</td>
-                        <td>
-                            <img id="1" onclick="remove(this)" alt="delete"
-                                        src="../assets/icons/delete-black-18dp.svg">
-                            <img id="1" onclick="update(this)" alt="edit"
-                                        src="../assets/icons/create-black-18dp.svg">           
-                        </td>
-                    </tr>
                 </table>  
             </div>
-        </div>  
+        </div> 
+        <script src ="../JS/home.js"></script> 
     </body>
 </html>
